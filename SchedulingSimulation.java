@@ -10,8 +10,8 @@ import java.util.concurrent.CountDownLatch;
 
 
 public class SchedulingSimulation {
-	static int noPatrons=7; //number of customers - default value if not provided on command line
-	static int sched=0; //which scheduling algorithm, 0= FCFS
+	static int noPatrons=5; //number of customers - default value if not provided on command line
+	static int sched=1; //which scheduling algorithm, 0= FCFS
 			
 	static CountDownLatch startSignal;
 

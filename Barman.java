@@ -25,7 +25,9 @@ public class Barman extends Thread {
 		if (schedAlg==0)
 			this.orderQueue = new LinkedBlockingQueue<>();
 		//FIX below
-		else this.orderQueue = new LinkedBlockingQueue<>(); //this just does the same thing 
+		else if (schedAlg==1) //this just does the same thing 
+			System.out.println("SJF queue created instead");
+			this.orderQueue = new PriorityBlockingQueue<>(50, new DrinkComparator());
 		
 	    this.startSignal=startSignal;
 	}
