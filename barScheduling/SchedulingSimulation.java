@@ -1,6 +1,6 @@
 //M. M. Kuttel 2024 mkuttel@gmail.com
 
-//package barScheduling;
+package barScheduling;
 // the main class, starts all threads
 
 

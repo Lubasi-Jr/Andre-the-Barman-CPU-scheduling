@@ -1,3 +1,6 @@
+package barScheduling;
+
+
 import java.util.Comparator;
 
 public class DrinkComparator implements Comparator<DrinkOrder>{

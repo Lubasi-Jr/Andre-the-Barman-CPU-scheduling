@@ -1,4 +1,4 @@
-//package barScheduling;
+package barScheduling;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -24,10 +24,10 @@ public class Barman extends Thread {
 	Barman(  CountDownLatch startSignal,int schedAlg) {
 		if (schedAlg==0)
 			this.orderQueue = new LinkedBlockingQueue<>();
-		//FIX below
-		else if (schedAlg==1) //this just does the same thing 
-			System.out.println("SJF queue created instead");
-			this.orderQueue = new PriorityBlockingQueue<>(50, new DrinkComparator());
+		
+		else if (schedAlg==1) 
+			//Queue created to perform SJF instead
+			this.orderQueue = new PriorityBlockingQueue<>(10, new DrinkComparator());
 		
 	    this.startSignal=startSignal;
 	}

@@ -1,5 +1,5 @@
 //M. M. Kuttel 2024 mkuttel@gmail.com
-//package barScheduling;
+package barScheduling;
 
 import java.io.FileOutputStream;
 import java.io.FileWriter;

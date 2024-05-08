@@ -1,4 +1,4 @@
-//package barScheduling;
+package barScheduling;
 
 import java.util.Hashtable;
 import java.util.HashMap;
